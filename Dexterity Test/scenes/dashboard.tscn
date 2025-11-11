@@ -1,0 +1,398 @@
+[gd_scene load_steps=12 format=3 uid="uid://c1ri5v7ysgiys"]
+
+[ext_resource type="Script" path="res://scenes/dashboard.gd" id="1_i3gph"]
+[ext_resource type="FontFile" uid="uid://cetsjqaghxe7e" path="res://ZTGatha-SemiBold.ttf" id="1_t6rf1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_acf6t"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sgptl"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q52wl"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fecaq"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_31af5"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4bmy7"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0ou4k"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_je4sn"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wowlh"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[node name="dashboard" type="Node"]
+script = ExtResource("1_i3gph")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[node name="Labels" type="Node" parent="."]
+
+[node name="Title" type="Label" parent="Labels"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -152.0
+offset_top = 112.0
+offset_right = 147.0
+offset_bottom = 165.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_t6rf1")
+theme_override_font_sizes/font_size = 40
+text = "Dashboard
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TestLabel" type="Label" parent="Labels"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 224.0
+offset_top = -125.0
+offset_right = 264.0
+offset_bottom = -97.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_fonts/font = ExtResource("1_t6rf1")
+theme_override_font_sizes/font_size = 20
+text = "Test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ActionLabel" type="Label" parent="Labels"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 552.0
+offset_top = -125.0
+offset_right = 610.0
+offset_bottom = -97.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_fonts/font = ExtResource("1_t6rf1")
+theme_override_font_sizes/font_size = 20
+text = "Action"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScoreLabel" type="Label" parent="Labels"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 800.0
+offset_top = -124.0
+offset_right = 850.0
+offset_bottom = -96.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_fonts/font = ExtResource("1_t6rf1")
+theme_override_font_sizes/font_size = 20
+text = "Score"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TestLabel2" type="Label" parent="Labels"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 224.0
+offset_top = -84.0
+offset_right = 397.0
+offset_bottom = 280.0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_t6rf1")
+theme_override_font_sizes/font_size = 20
+text = "Reaction Time
+
+
+Sequence Memory
+
+
+Aim Trainer
+
+
+Number Memory
+
+
+Language Memory"
+vertical_alignment = 1
+
+[node name="ReactionTimeTestLabel" type="Label" parent="Labels"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 800.0
+offset_top = -84.0
+offset_right = 973.0
+offset_bottom = -56.0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_t6rf1")
+theme_override_font_sizes/font_size = 20
+text = "0"
+vertical_alignment = 1
+
+[node name="SequenceMemoryTestLabel" type="Label" parent="Labels"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 800.0
+offset_top = -4.0
+offset_right = 973.0
+offset_bottom = 24.0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_t6rf1")
+theme_override_font_sizes/font_size = 20
+text = "0"
+vertical_alignment = 1
+
+[node name="AimTrainerLabel" type="Label" parent="Labels"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 800.0
+offset_top = 84.0
+offset_right = 973.0
+offset_bottom = 112.0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_t6rf1")
+theme_override_font_sizes/font_size = 20
+text = "0"
+vertical_alignment = 1
+
+[node name="VisualMemoryLabel" type="Label" parent="Labels"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 800.0
+offset_top = 172.0
+offset_right = 973.0
+offset_bottom = 200.0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_t6rf1")
+theme_override_font_sizes/font_size = 20
+text = "0"
+vertical_alignment = 1
+
+[node name="VerbalMemoryLabel" type="Label" parent="Labels"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 800.0
+offset_top = 252.0
+offset_right = 973.0
+offset_bottom = 280.0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_t6rf1")
+theme_override_font_sizes/font_size = 20
+text = "0"
+vertical_alignment = 1
+
+[node name="Buttons" type="Node" parent="."]
+
+[node name="PlayButton" type="Button" parent="Buttons"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -144.0
+offset_top = -97.0
+offset_right = 152.0
+offset_bottom = -52.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_t6rf1")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_acf6t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sgptl")
+theme_override_styles/normal = SubResource("StyleBoxFlat_q52wl")
+text = "Play"
+
+[node name="PlayButton2" type="Button" parent="Buttons"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -144.0
+offset_top = -12.0
+offset_right = 152.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_t6rf1")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_acf6t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sgptl")
+theme_override_styles/normal = SubResource("StyleBoxFlat_q52wl")
+text = "Play"
+
+[node name="PlayButton3" type="Button" parent="Buttons"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -144.0
+offset_top = 76.0
+offset_right = 152.0
+offset_bottom = 121.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_t6rf1")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_acf6t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sgptl")
+theme_override_styles/normal = SubResource("StyleBoxFlat_q52wl")
+text = "Play"
+
+[node name="PlayButton4" type="Button" parent="Buttons"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -144.0
+offset_top = 164.0
+offset_right = 152.0
+offset_bottom = 209.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_t6rf1")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_acf6t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sgptl")
+theme_override_styles/normal = SubResource("StyleBoxFlat_q52wl")
+text = "Play"
+
+[node name="PlayButton5" type="Button" parent="Buttons"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -144.0
+offset_top = 244.0
+offset_right = 152.0
+offset_bottom = 289.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_t6rf1")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_acf6t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sgptl")
+theme_override_styles/normal = SubResource("StyleBoxFlat_q52wl")
+text = "Play"
+
+[node name="BackButton" type="Button" parent="Buttons"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -536.0
+offset_top = 212.0
+offset_right = -443.0
+offset_bottom = 284.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_t6rf1")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_fecaq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_31af5")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4bmy7")
+text = "Back
+"
+
+[node name="LoadButton" type="Button" parent="Buttons"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -128.0
+offset_top = -240.0
+offset_right = -35.0
+offset_bottom = -168.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_t6rf1")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_fecaq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_31af5")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4bmy7")
+text = "Load"
+
+[node name="DeleteButton" type="Button" parent="Buttons"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -128.0
+offset_top = -120.0
+offset_right = -35.0
+offset_bottom = -48.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_t6rf1")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_fecaq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_31af5")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4bmy7")
+text = "Delete"
+
+[node name="SaveButton" type="Button" parent="Buttons"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 448.0
+offset_top = -28.0
+offset_right = 541.0
+offset_bottom = 35.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_t6rf1")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_0ou4k")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_je4sn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_wowlh")
+text = "Save
+"
+
+[connection signal="pressed" from="Buttons/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="Buttons/PlayButton2" to="." method="_on_play_button_2_pressed"]
+[connection signal="pressed" from="Buttons/PlayButton3" to="." method="_on_play_button_3_pressed"]
+[connection signal="pressed" from="Buttons/PlayButton4" to="." method="_on_play_button_4_pressed"]
+[connection signal="pressed" from="Buttons/PlayButton5" to="." method="_on_play_button_5_pressed"]
+[connection signal="pressed" from="Buttons/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="Buttons/LoadButton" to="." method="_on_load_button_pressed"]
+[connection signal="pressed" from="Buttons/DeleteButton" to="." method="_on_delete_button_pressed"]
+[connection signal="pressed" from="Buttons/SaveButton" to="." method="_on_save_button_pressed"]

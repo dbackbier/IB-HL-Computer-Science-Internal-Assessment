@@ -1,0 +1,373 @@
+[gd_scene load_steps=42 format=3 uid="uid://dqveybacvale5"]
+
+[ext_resource type="Script" path="res://scenes/sequencememorytest.gd" id="1_kurnu"]
+[ext_resource type="FontFile" uid="uid://cetsjqaghxe7e" path="res://ZTGatha-SemiBold.ttf" id="1_vruqe"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v0yco"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p2qpy"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0fj6l"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7pa7d"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wf1kq"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lrj03"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uaqv1"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4pr0x"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_agyt6"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hp63h"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ofyjm"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jwqxu"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ohbvs"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cc2fr"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1cc0a"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o4ydq"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_664hf"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ly7ho"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a1xbu"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nfyvn"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2n1aw"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dvlf7"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vif4y"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_56v2n"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_juu4b"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c4n1p"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1lacm"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ymc3m"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l8qct"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wivlv"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_suptb"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8731a"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jow01"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5wvj4"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_80h2f"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_18g6g"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cespf"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_40ovg"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_825fc"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[node name="sequencememorytest" type="Node"]
+script = ExtResource("1_kurnu")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[node name="Title" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -152.0
+offset_top = 112.0
+offset_right = 147.0
+offset_bottom = 160.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_vruqe")
+theme_override_font_sizes/font_size = 40
+text = "Sequence Memory
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SubTitle" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -176.0
+offset_top = -159.0
+offset_right = 180.0
+offset_bottom = -106.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_vruqe")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LivesTitle" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -176.0
+offset_top = -100.0
+offset_right = 180.0
+offset_bottom = -47.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_vruqe")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Buttons" type="Node" parent="."]
+
+[node name="Button1" type="Button" parent="Buttons"]
+offset_left = 408.0
+offset_top = 284.0
+offset_right = 488.0
+offset_bottom = 364.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_v0yco")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p2qpy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0fj6l")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_7pa7d")
+
+[node name="Button2" type="Button" parent="Buttons"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -40.0
+offset_right = 40.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_wf1kq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lrj03")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uaqv1")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_4pr0x")
+
+[node name="Button3" type="Button" parent="Buttons"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 88.0
+offset_top = -40.0
+offset_right = 168.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_agyt6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hp63h")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ofyjm")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_jwqxu")
+
+[node name="Button4" type="Button" parent="Buttons"]
+offset_left = 408.0
+offset_top = 408.0
+offset_right = 488.0
+offset_bottom = 488.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ohbvs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_cc2fr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1cc0a")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_o4ydq")
+
+[node name="Button5" type="Button" parent="Buttons"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = 84.0
+offset_right = 40.0
+offset_bottom = 164.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_664hf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ly7ho")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1xbu")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_nfyvn")
+
+[node name="Button6" type="Button" parent="Buttons"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 88.0
+offset_top = 84.0
+offset_right = 168.0
+offset_bottom = 164.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_2n1aw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dvlf7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vif4y")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_56v2n")
+
+[node name="Button7" type="Button" parent="Buttons"]
+offset_left = 408.0
+offset_top = 536.0
+offset_right = 488.0
+offset_bottom = 616.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_juu4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_c4n1p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1lacm")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ymc3m")
+
+[node name="Button8" type="Button" parent="Buttons"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = 212.0
+offset_right = 40.0
+offset_bottom = 292.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_l8qct")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wivlv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_suptb")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_8731a")
+
+[node name="Button9" type="Button" parent="Buttons"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 88.0
+offset_top = 212.0
+offset_right = 168.0
+offset_bottom = 292.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_jow01")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5wvj4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_80h2f")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_18g6g")
+
+[node name="BackButton2" type="Button" parent="Buttons"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = 204.0
+offset_right = -419.0
+offset_bottom = 276.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_vruqe")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_cespf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_40ovg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_825fc")
+text = "Back
+"
+
+[node name="StartButton" type="Button" parent="Buttons"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 416.0
+offset_top = 204.0
+offset_right = 509.0
+offset_bottom = 276.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_vruqe")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_cespf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_40ovg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_825fc")
+text = "Start
+"
+
+[node name="LightUpTimer" type="Timer" parent="."]
+
+[node name="InBetweenTimer" type="Timer" parent="."]
+wait_time = 0.25
+
+[connection signal="pressed" from="Buttons/Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Buttons/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Buttons/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Buttons/Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Buttons/Button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="Buttons/Button6" to="." method="_on_button_6_pressed"]
+[connection signal="pressed" from="Buttons/Button7" to="." method="_on_button_7_pressed"]
+[connection signal="pressed" from="Buttons/Button8" to="." method="_on_button_8_pressed"]
+[connection signal="pressed" from="Buttons/Button9" to="." method="_on_button_9_pressed"]
+[connection signal="pressed" from="Buttons/BackButton2" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="Buttons/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="timeout" from="LightUpTimer" to="." method="_on_light_up_timer_timeout"]

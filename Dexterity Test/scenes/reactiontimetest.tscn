@@ -1,0 +1,103 @@
+[gd_scene load_steps=8 format=3 uid="uid://d0igtgebfabc"]
+
+[ext_resource type="Script" path="res://scenes/reactiontimetest.gd" id="1_vnh2j"]
+[ext_resource type="FontFile" uid="uid://cetsjqaghxe7e" path="res://ZTGatha-SemiBold.ttf" id="2_7n24h"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bfnpf"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1vx8k"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3bwfv"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8dqhx"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0r7k6"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[node name="reactiontimetest" type="Node"]
+script = ExtResource("1_vnh2j")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[node name="Title" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -180.5
+offset_top = 112.0
+offset_right = 175.5
+offset_bottom = 165.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_7n24h")
+theme_override_font_sizes/font_size = 40
+text = "Click as quickly as you can when the box turns red"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ReactTimer" type="Timer" parent="."]
+
+[node name="ReactButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -364.0
+offset_top = -124.0
+offset_right = 364.0
+offset_bottom = 260.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_7n24h")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_bfnpf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1vx8k")
+text = "Press Space to Start"
+
+[node name="TryTimer" type="Timer" parent="."]
+wait_time = 4096.0
+one_shot = true
+
+[node name="InBetweenTimer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="BackButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = 204.0
+offset_right = -419.0
+offset_bottom = 276.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_7n24h")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_3bwfv")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8dqhx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0r7k6")
+text = "Back
+"
+
+[connection signal="timeout" from="ReactTimer" to="." method="_on_react_timer_timeout"]
+[connection signal="button_down" from="ReactButton" to="." method="_on_react_button_button_down"]
+[connection signal="timeout" from="InBetweenTimer" to="." method="_on_in_between_timer_timeout"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

@@ -1,0 +1,163 @@
+[gd_scene load_steps=10 format=3 uid="uid://ds547ksl4e1ph"]
+
+[ext_resource type="Script" path="res://scenes/numbermemorytest.gd" id="1_thqbw"]
+[ext_resource type="FontFile" uid="uid://cetsjqaghxe7e" path="res://ZTGatha-SemiBold.ttf" id="2_druyd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v1n5o"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_muhsg"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wlh8p"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jf0ui"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vff6j"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qay4t"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bl63p"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[node name="numbermemorytest" type="Node"]
+script = ExtResource("1_thqbw")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[node name="Title" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -152.0
+offset_top = 112.0
+offset_right = 147.0
+offset_bottom = 160.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_druyd")
+theme_override_font_sizes/font_size = 40
+text = "Number Memory"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LevelLabel" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -250.0
+offset_top = 184.0
+offset_right = 248.0
+offset_bottom = 237.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_druyd")
+theme_override_font_sizes/font_size = 24
+text = "As the level increases so will the length of the number!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NumberLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -15.0
+offset_right = 20.0
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_druyd")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InputLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -15.0
+offset_right = 20.0
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_druyd")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="StartButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -88.0
+offset_top = -34.0
+offset_right = 88.0
+offset_bottom = 34.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_druyd")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_v1n5o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_muhsg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wlh8p")
+text = "Start
+"
+
+[node name="BackButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = 196.0
+offset_right = 45.0
+offset_bottom = 268.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_druyd")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_jf0ui")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vff6j")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qay4t")
+text = "Back
+"
+
+[node name="Countdown" type="ProgressBar" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -88.0
+offset_top = 76.0
+offset_right = 88.0
+offset_bottom = 103.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/fill = SubResource("StyleBoxFlat_bl63p")
+max_value = 3.0
+show_percentage = false
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

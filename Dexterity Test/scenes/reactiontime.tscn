@@ -1,0 +1,121 @@
+[gd_scene load_steps=9 format=3 uid="uid://c1ebsx6bpclui"]
+
+[ext_resource type="Script" path="res://scenes/reactiontime.gd" id="1_klofy"]
+[ext_resource type="FontFile" uid="uid://cetsjqaghxe7e" path="res://ZTGatha-SemiBold.ttf" id="1_ww0mi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lrguv"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0uco5"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1jf3p"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wqmgc"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s2bnu"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rrm75"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[node name="reactiontime" type="Node"]
+script = ExtResource("1_klofy")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[node name="Title" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -152.0
+offset_top = 112.0
+offset_right = 147.0
+offset_bottom = 160.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_ww0mi")
+theme_override_font_sizes/font_size = 40
+text = "Reaction Time Test
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SubTitle" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -179.0
+offset_top = 184.0
+offset_right = 177.0
+offset_bottom = 237.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_ww0mi")
+theme_override_font_sizes/font_size = 24
+text = "Simple tool to measure your reaction time!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SubTitle2" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -237.0
+offset_top = 384.0
+offset_right = 236.0
+offset_bottom = 437.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_ww0mi")
+theme_override_font_sizes/font_size = 24
+text = "Click as quickly as you can when the box turns red"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -88.0
+offset_top = -34.0
+offset_right = 88.0
+offset_bottom = 34.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_ww0mi")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_lrguv")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0uco5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1jf3p")
+text = "Continue
+"
+
+[node name="BackButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = 196.0
+offset_right = 45.0
+offset_bottom = 268.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_ww0mi")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_wqmgc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_s2bnu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rrm75")
+text = "Back
+"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

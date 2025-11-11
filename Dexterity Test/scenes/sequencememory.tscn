@@ -1,0 +1,121 @@
+[gd_scene load_steps=9 format=3 uid="uid://8amwf1jjfjj3"]
+
+[ext_resource type="Script" path="res://scenes/sequencememory.gd" id="1_8v23v"]
+[ext_resource type="FontFile" uid="uid://cetsjqaghxe7e" path="res://ZTGatha-SemiBold.ttf" id="1_soo3k"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_efp5g"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jqqkg"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_170w4"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_my0r7"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6dm6n"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kasan"]
+bg_color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[node name="sequencememory" type="Node"]
+script = ExtResource("1_8v23v")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.0666667, 0.317647, 0.45098, 1)
+
+[node name="Title" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -152.0
+offset_top = 112.0
+offset_right = 147.0
+offset_bottom = 160.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_soo3k")
+theme_override_font_sizes/font_size = 40
+text = "Sequence Memory
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SubTitle" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -179.0
+offset_top = 184.0
+offset_right = 177.0
+offset_bottom = 237.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_soo3k")
+theme_override_font_sizes/font_size = 24
+text = "Memorize the pattern!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SubTitle2" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -280.5
+offset_top = 384.0
+offset_right = 279.5
+offset_bottom = 437.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_soo3k")
+theme_override_font_sizes/font_size = 24
+text = "Memorize the sequence of buttons that light up, then press them in order."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -88.0
+offset_top = -34.0
+offset_right = 88.0
+offset_bottom = 34.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_soo3k")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_efp5g")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jqqkg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_170w4")
+text = "Continue
+"
+
+[node name="BackButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = 196.0
+offset_right = 45.0
+offset_bottom = 268.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_soo3k")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_my0r7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6dm6n")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kasan")
+text = "Back
+"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
